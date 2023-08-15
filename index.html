@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+ <div class="header">
+    <div class="navi container flex">
+        <div class="icon">
+        <a href="#" onclick="reload()">
+            <img src="logo.png" alt="company-logo" class="company-logo">
+        </a>
+        <h5>InfoSphere</h5>
+        
+        </div>
+        <nav class="nav-links">
+            <ul class="nav-links flex">
+                <li class="hover-link nav-items" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                <li class="hover-link nav-items" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                <li class="hover-link nav-items" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+            </ul>
+        </nav>
+        <div class="search-bar flex">
+         <input type="text" id="search-text" class="news-input" placeholder="e.g. MS dhoni">
+         <button id="search-button" class="search-button">Search</button>
+        </div>
+    </div>
+ </div>
+ <main>
+    <div class="cards-container container flex" id="cards-container">
+       
+    </div>
+ </main>
+
+ <template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title">This is the Title</h3>
+            <h6 class="news-source" id="news-source">End gadget  26/08/2023</h6>
+            <p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate vitae odit sunt error enim consequatur animi id obcaecati iste illo?</p>
+        </div>
+    </div>
+
+ </template>
+
+</body>
+</html>
